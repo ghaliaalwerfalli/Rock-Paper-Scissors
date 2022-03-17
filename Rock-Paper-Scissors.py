@@ -1,4 +1,3 @@
-## BUG : if player's input any number other than 0,1,2 the game wont exit OR wont show invalid input and prompts asking user's input again
 
 import random
 import time
@@ -51,7 +50,7 @@ while still_working:  ### while TRUE
     elif user == 2:
         print(scissors)
     else:
-        ("You typed an invalid number. You lose!")
+        print("You typed an invalid number. You lose!")
 
     ### Prompts computers choice using random.randint(0,2) and assigns the random choice to one variable of 3 choices
     print("Computer's choice is: ")
@@ -86,7 +85,7 @@ while still_working:  ### while TRUE
         elif comp == 2:
             print("It is a draw")
     else:
-      ("You typed an invalid number. You lose!")
+      print("You typed an invalid number. You lose!")
     
     
     user_continue = input("Do you wish to continue playing? [Y/n]: ").lower()
